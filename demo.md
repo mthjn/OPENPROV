@@ -298,6 +298,243 @@ ZIP Compression Tools
 pi@raspberrypi ~ $ **sudo apt-get install zip**
 
 
+#####Appendix A - Generating a PGP Key
+Please note it takes time to generate a 4096 bit key on the Raspberry Pi 2.  You will need to create entropy so we suggest you open a second SSH session to the pi and run some commands.  
+
+Make sure to pick a long and unique passphrase. If your key gets stolen, this passphrase is the only thing protecting it!
+
+The following commands are used: (Commands/Options are displayed in bold)
+
+```pi@raspberrypi ~ $ **gpg --gen-key**
+gpg (GnuPG) 1.4.18; Copyright (C) 2014 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+gpg: directory `/home/pi/.gnupg' created
+gpg: new configuration file `/home/pi/.gnupg/gpg.conf' created
+gpg: WARNING: options in `/home/pi/.gnupg/gpg.conf' are not yet active during this run
+gpg: keyring `/home/pi/.gnupg/secring.gpg' created
+gpg: keyring `/home/pi/.gnupg/pubring.gpg' created
+Please select what kind of key you want:
+  (1) RSA and RSA (default)
+  (2) DSA and Elgamal
+  (3) DSA (sign only)
+  (4) RSA (sign only)
+Your selection? 1
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (2048) **4096**
+Requested keysize is 4096 bits
+Please specify how long the key should be valid.
+            0 = key does not expire
+         <n>  = key expires in n days
+         <n>w = key expires in n weeks
+         <n>m = key expires in n months
+         <n>y = key expires in n years
+Key is valid for? (0) **0**
+Key does not expire at all
+Is this correct? (y/N) **y**
+
+You need a user ID to identify your key; the software constructs the user ID
+from the Real Name, Comment and Email Address in this form:
+        "Heinrich Heine (Der Dichter) <heinrichh@duesseldorf.de>"
+
+Real name: Open Provenance
+Email address: **openprov@myveryown.org**
+Comment:
+You selected this USER-ID:
+        "Open Provenance <openprov@myveryown.org>"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? **o**
+
+You need a Passphrase to protect your secret key.
+
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+
+Not enough random bytes available.  Please do some other work to give
+the OS a chance to collect more entropy! (Need 278 more bytes)
+...............................+++++
+
+gpg: /home/pi/.gnupg/trustdb.gpg: trustdb created
+gpg: key F7CEF9F2 marked as ultimately trusted
+public and secret key created and signed.
+gpg: checking the trustdb
+gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+pub   4096R/F7CEF9F2 2016-01-12
+         Key fingerprint = C619 01FB 88D1 FF96 80B7  EFC1 6642 D6FD F7CE F9F2
+uid                      Open Provenance <openprov@myveryown.org>
+sub   4096R/7B35B358 2016-01-12
+pi@raspberrypi ~ $```
+
+
+#####Appendix B - Strengthen the PGP Key
+To improve the security of your signatures we set our key to prefer stronger hashes using the following commands: (Commands/Options are displayed in bold)
+
+```pi@raspberrypi ~ $ **gpg --edit-key openprov@myveryown.org**
+gpg (GnuPG) 1.4.18; Copyright (C) 2014 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Secret key is available.
+
+pub  4096R/F7CEF9F2  created: 2016-01-12  expires: never           usage: SC
+                        trust: ultimate          validity: ultimate
+sub  4096R/7B35B358  created: 2016-01-12  expires: never           usage: E
+[ultimate] (1). Open Provenance <openprov@myveryown.org>
+
+gpg> **setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed**
+
+Set preference list to:
+        Cipher: AES256, AES192, AES, CAST5, 3DES
+        Digest: SHA512, SHA384, SHA256, SHA224, SHA1
+        Compression: ZLIB, BZIP2, ZIP, Uncompressed
+        Features: MDC, Keyserver no-modify
+Really update the preferences? (y/N) **y**
+
+
+pub  4096R/F7CEF9F2  created: 2016-01-12  expires: never           usage: SC
+                        trust: ultimate          validity: ultimate
+sub  4096R/7B35B358  created: 2016-01-12  expires: never           usage: E
+[ultimate] (1). Open Provenance <openprov@myveryown.org>
+
+
+gpg> **save**
+pi@raspberrypi ~ $```
+
+You are then able to export the keys for backup using the following commands:
+
+To obtain your public key in text format use:
+
+pi@raspberrypi ~ $ gpg --export -a openprov@myveryown.org > pgppublic.txt
+
+To obtain your private key in text format use:
+
+pi@raspberrypi ~ $ gpg --export-secret-key -a openprov@myveryown.org > pgpsecret.txt
+
+#####Appendix C - Generating Vanity Bitcoin Addresses and Private Keys
+As great as the Raspberry Pi 2 is, it is not really suited to brute forcing bitcoin vanity addresses.  We suggest you use a more powerful computer for this task.  
+
+Vanitygen is available in a few flavours, there are 32 and 64 bit versions, as well as an OCL optimised version, use the best you can for maximum speed.
+
+The exact command you will use will depend on the version you are using - here are some examples:
+
+For the 32bit .exe the command to generate our vanity address would be as follows
+
+**c:\vanitygen> vanitygen 1openP**
+
+For the 64bit .exe the command to generate our vanity address would be as follows
+
+**c:\vanitygen> vanitygen64 1openP**
+
+For the OCL .exe the command to generate our vanity address would be as follows
+
+**c:\vanitygen> oclvanitygen -D 0:0 1openP**
+
+The -D switch is used to specify the GPU to use which in our case is 0:0.  If you do not specify which GPU to use it will show you a list of available options.
+
+The expected output would read something like
+
+*Difficulty: 15318045009*
+
+*[3.42 Mkey/s][total 50331648][Prob 0.3%][50% in 51.5min]*
+
+Once the search is complete you will see something like.  
+
+*Pattern: 1openP*
+
+*Address:1openPBE4b7hTJ5Q6oZGgaHpxG2bC2h32*
+
+*Priv Key: ***************************************************
+
+######Please note:  
+
+We have replaced the private key in the above example with asterisks for security reasons.
+
+Even with a GPU it may take some time depending on how many keys per second you are able to generate to find an address that matches your search.
+
+#####Appendix D - Cross Signing your Bitcoin Vanity Address and PGP Key
+To cross sign your PGP Key with your bitcoin vanity address, first export your PGP Public key into a file e.g.
+
+pi@raspberrypi ~ $ **gpg --export -a openprov@myveryown.org > pgp.txt**
+
+Then add to the top of the file your bitcoin address e.g. “Bitcoin Address: 1XXXXXXXXXXXXXXXXXXXX”
+
+pi@raspberrypi ~ $ **nano pgp.txt**
+
+(add your bitcoin address to the top of the file)
+
+Press ctrl+x to exit nano, answer y to save the changes.
+
+Then sign the file with PGP e.g.
+
+pi@raspberrypi ~ $ **gpg --clearsign --digest-algo SHA256 pgp.txt**
+
+This will result in a pgp.txt.asc file that contains the PGP signed, copy of your public key and bitcoin address.  Delete the pgp.txt and rename pgp.txt.asc to pgp.txt
+
+pi@raspberrypi ~ $ **rm pgp.txt**
+
+pi@raspberrypi ~ $ **mv pgp.txt.asc pgp.txt**
+
+Then copy the contents of this file into the Electrum message signing dialog and click sign.  
+
+Update the pgp.txt file with the bitcoin signature as shown and save the file.  
+
+#####Appendix E - Encrypting, Signing, Verifying, Hashing and Zipping
+
+Where applicable you will need to replace the email address and files names as appropriate with your own.  To encrypt data use the following commands: (Commands/Options are displayed in bold)
+
+pi@raspberrypi ~ $ **gpg -e -a -r openprov@myveryown.org london.cr2**
+
+This will result in a london.cr2.asc file which is a ciphertext which we rename to .txt
+
+pi@raspberrypi ~ $ **mv london.cr2.asc london.cr2.txt**
+
+In this case we also wish to remove the unencrypted file from this folder
+
+pi@raspberrypi ~ $ **rm london.cr2**
+
+We repeated the above for the london.xmp file we were also supplied.
+
+To sign binary data use the following commands:
+
+pi@raspberrypi ~ $ **gpg --detach-sign -a --digest-algo SHA256 london.jpg**
+
+
+This will result in a london.jpg.asc signature file which we rename to .txt
+
+pi@raspberrypi ~ $ **mv london.jpg.asc london.jpg.txt**
+
+To sign text data use the following commands:
+
+pi@raspberrypi ~ $ **gpg --clearsign --digest-algo SHA256 declaration.txt**
+
+This will result in a declaration.txt.asc file which we rename to .txt
+
+pi@raspberrypi ~ $ **rm declaration.txt**
+
+pi@raspberrypi ~ $ **mv declaration.txt.asc declaration.txt**
+
+To hash all files in a folder to a single text file use the following command:
+
+pi@raspberrypi ~ $ **gpg  --print-md SHA256 *.* >> sha256.txt**
+
+This will result in the SHA256 hash of all collated input files being added to the sha256.txt file.
+
+To verify a signature use the following commands:
+
+pi@raspberrypi ~ $ **gpg --verify pgp.txt**
+
+pi@raspberrypi ~ $ **gpg --verify london.jpg.txt london.jpg**
+
+To ZIP all files in a folder use the following command:
+
+pi@raspberrypi ~ $ **zip openprov.zip *.***
+
+
+
 ####Donations & Support
 If you would like to donate to the Open Provenance Project our official donation address is:
 
