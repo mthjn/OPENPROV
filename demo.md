@@ -102,7 +102,7 @@ TX B: As we are working with a digital object e.g. a .JPG we are going to use pa
 
 We use coinb.in locally to 
 
-Create 
+* Create 
 
 ![demo](https://myveryown.org/demo/screens/openprov-demo_09.jpg)
 
@@ -110,19 +110,19 @@ Create
 
 ![demo](https://myveryown.org/demo/screens/openprov-demo_11.jpg)
 
-Sign 
+* Sign 
 
 ![demo](https://myveryown.org/demo/screens/openprov-demo_12.jpg)
 
 ![demo](https://myveryown.org/demo/screens/openprov-demo_13.jpg)
 
-Verify 
+* Verify 
 
 ![demo](https://myveryown.org/demo/screens/openprov-demo_14.jpg)
 
 ![demo](https://myveryown.org/demo/screens/openprov-demo_15.jpg)
 
-Broadcast the transaction as shown.
+* Broadcast the transaction as shown.
 
 ![demo](https://myveryown.org/demo/screens/openprov-demo_16.jpg)
 
@@ -252,23 +252,15 @@ http://coinsecrets.org/?to=393574.000001
 
 #####Software
 
-https://github.com/samr7/vanitygen used to brute force bitcoin vanity addresses.
-
-https://www.gnupg.org used to create PGP keys and binary file signatures.
-
-https://bitaddress.org used to obtain public keys and addresses from private keys.
-
-https://coinb.in used to create multisig and OP_RETURN transactions.
-
-http://coinsecrets.org used to view OP_RETURN transaction data in the blockchain.
-
-https://electrum.org used to generate bitcoin message signatures.
-
-https://blockchain.info used to obtain blockchain block data.
-
-https://blockr.io used to cross check blockchain data.
-
-https://www.branah.com/ascii-converter used to convert ASCII to HEX.
+* https://github.com/samr7/vanitygen used to brute force bitcoin vanity addresses.
+* https://www.gnupg.org used to create PGP keys and binary file signatures.
+* https://bitaddress.org used to obtain public keys and addresses from private keys.
+* https://coinb.in used to create multisig and OP_RETURN transactions.
+* http://coinsecrets.org used to view OP_RETURN transaction data in the blockchain.
+* https://electrum.org used to generate bitcoin message signatures.
+* https://blockchain.info used to obtain blockchain block data.
+* https://blockr.io used to cross check blockchain data.
+* https://www.branah.com/ascii-converter used to convert ASCII to HEX.
 
 #####Raspberry Pi 2 - Additional Software Setup
 Ensure your raspbian installation is up to date.
