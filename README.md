@@ -209,3 +209,9 @@ Please see the demonstration file in this repo.
 
 4) https://www.proofofexistence.com DOCPROOF prefixed SHA256 hash OP_RETURN transactions.
 
+###Donations & Support
+If you would like to donate to the Open Provenance Project our official donation address is:
+**1opDUZQ9nsL1LJALBdV1dvqSMtcvNj9EC**
+
+If you would like to give support with your abilities please get in touch via Twitter 
+**@OpenProvenance**.
