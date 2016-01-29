@@ -197,23 +197,23 @@ https://blockchain.info/tx/4b6e5af733b072a2188675c5c4c7998b7138f21d0b49bb7999ed3
 #####Step 12
 Usiing coinb.in locally we create, sign, verify and broadcast the first transaction.
 
-https://myveryown.org/demo/screens/openprov-demo_32.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_32.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_33.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_33.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_34.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_34.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_35.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_35.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_36.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_36.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_37.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_37.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_38.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_38.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_39.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_39.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_40.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_40.jpg)
 
 https://blockchain.info/tx/83c432b5955752c56fc83a2e3b5ab9ea55e334c438bd57ca01db3860865409b7
 
@@ -221,19 +221,19 @@ Then we create, sign and broadcast the second transaction which includes the OP_
 
 *4f50454e50524f5677A2BB6D9B937185B08ADA025DAB3B7A9801667288CF03BCC12E0CFAF755A88D*
 
-https://myveryown.org/demo/screens/openprov-demo_41.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_41.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_42.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_42.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_43.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_43.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_44.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_44.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_45.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_45.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_46.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_46.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_47.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_47.jpg)
 
 http://coinsecrets.org/?to=393559.000001
 
