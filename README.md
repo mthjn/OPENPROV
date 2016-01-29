@@ -201,13 +201,10 @@ Please see the demonstration file in this repo.
 
 ###References
 
-1) https://bitcoin.org/bitcoin.pdf Satoshi Nakamoto Bitcoin White Paper.
-
-2) https://github.com/MrChrisJ/World-Citizenship by Mr Chris Ellis.
-
-3) https://gitbub.com/ipfs a new hypermedia distribution protocol.
-
-4) https://www.proofofexistence.com DOCPROOF prefixed SHA256 hash OP_RETURN transactions.
+* 1) https://bitcoin.org/bitcoin.pdf Satoshi Nakamoto Bitcoin White Paper.
+* 2) https://github.com/MrChrisJ/World-Citizenship by Mr Chris Ellis.
+* 3) https://gitbub.com/ipfs a new hypermedia distribution protocol.
+* 4) https://www.proofofexistence.com DOCPROOF prefixed SHA256 hash OP_RETURN transactions.
 
 ###Donations & Support
 If you would like to donate to the Open Provenance Project our official donation address is:
