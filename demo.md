@@ -26,9 +26,9 @@ Please see Appendices A and B  for PGP key generation and strengthening commands
 
 The following screenshots show you how to generate/verify a signature in Electrum.
 
-https://myveryown.org/demo/screens/openprov-demo_01.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_01.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_02.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_02.jpg)
 
 
 #####Step 2
