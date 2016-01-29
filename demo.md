@@ -303,7 +303,7 @@ Please note it takes time to generate a 4096 bit key on the Raspberry Pi 2.  You
 
 Make sure to pick a long and unique passphrase. If your key gets stolen, this passphrase is the only thing protecting it!
 
-The following commands are used: (Commands/Options are displayed in bold)
+The following is the screen dump from running PGP
 
 ````
 pi@raspberrypi ~ $ gpg --gen-key
@@ -372,7 +372,7 @@ pi@raspberrypi ~ $
 ````
 
 #####Appendix B - Strengthen the PGP Key
-To improve the security of your signatures we set our key to prefer stronger hashes using the following commands: (Commands/Options are displayed in bold)
+To improve the security of your signatures we set our key to prefer stronger hashes as follows:
 
 ````
 pi@raspberrypi ~ $ gpg --edit-key openprov@myveryown.org
@@ -504,7 +504,6 @@ We repeated the above for the london.xmp file we were also supplied.
 To sign binary data use the following commands:
 
 pi@raspberrypi ~ $ **gpg --detach-sign -a --digest-algo SHA256 london.jpg**
-
 
 This will result in a london.jpg.asc signature file which we rename to .txt
 
