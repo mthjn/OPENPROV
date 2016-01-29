@@ -26,9 +26,9 @@ Please see Appendices A and B  for PGP key generation and strengthening commands
 
 The following screenshots show you how to generate/verify a signature in Electrum.
 
-https://myveryown.org/demo/screens/openprov-demo_01.jpg
+![demo 01](https://myveryown.org/demo/screens/openprov-demo_01.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_02.jpg
+![demo 02](https://myveryown.org/demo/screens/openprov-demo_02.jpg)
 
 
 #####Step 2
@@ -38,7 +38,7 @@ https://myveryown.org/demo/london.cr2.txt
 
 https://myveryown.org/demo/london.xmp.txt
 
-https://myveryown.org/demo/london.jpg
+![london](https://myveryown.org/demo/london.jpg)
 
 https://myveryown.org/demo/london.jpg.txt
 
@@ -47,14 +47,13 @@ Please see Appendix E for more information on Encrypting, Signing, Verifying, Ha
 #####Step 3
 We then create an OPENPROV.TXT file and signed it with both our PGP key and bitcoin vanity address. https://myveryown.org/demo/openprov.txt
 
-https://myveryown.org/demo/screens/openprov-demo_03.jpg
+![demo 03](https://myveryown.org/demo/screens/openprov-demo_03.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_04.jpg
+![demo 04](https://myveryown.org/demo/screens/openprov-demo_04.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_05.jpg
+![demo 05](https://myveryown.org/demo/screens/openprov-demo_05.jpg)
 
-We used the openprov.txt template file 
-https://myveryown.org/template.zip
+We used the [openprov.txt template file](https://myveryown.org/template.zip)
 
 
 #####Step 4
@@ -64,8 +63,7 @@ Then we collate additional files: license.txt, openprov.nfo, FILE_ID.DIZ.
 We then hashed the data.
 https://myveryown.org/demo/sha256.txt
 
-We then made a zip of the aforementioned 11 files.
-https://myveryown.org/demo/openprov.zip 
+We then made a [zip of the aforementioned 11 files](https://myveryown.org/demo/openprov.zip)
 
 Please see Appendix E for information on zipping files.
 
@@ -87,11 +85,11 @@ This key pair creates a direct representation of our object in the blockchain.
 
 The following screen shots detail how we obtained the bitcoin address using our SHA256 hash as a private key using bitaddress.org locally. 
 
-https://myveryown.org/demo/screens/openprov-demo_06.jpg
+![demo 06](https://myveryown.org/demo/screens/openprov-demo_06.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_07.jpg
+![demo 07](https://myveryown.org/demo/screens/openprov-demo_07.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_08.jpg
+![demo 08](https://myveryown.org/demo/screens/openprov-demo_08.jpg)
 
 #####Step 8
 TX A: https://blockchain.info/tx/50e30265604e888c384796675bc246f2dc9f8ed6aa9d5854bcd778765ae7feb8 
@@ -104,27 +102,27 @@ We use coinb.in locally to
 
 Create 
 
-https://myveryown.org/demo/screens/openprov-demo_09.jpg
+![demo 09](https://myveryown.org/demo/screens/openprov-demo_09.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_10.jpg
+![demo 10](https://myveryown.org/demo/screens/openprov-demo_10.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_11.jpg
+![demo 11](https://myveryown.org/demo/screens/openprov-demo_11.jpg)
 
 Sign 
 
-https://myveryown.org/demo/screens/openprov-demo_12.jpg
+![demo 12](https://myveryown.org/demo/screens/openprov-demo_12.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_13.jpg
+![demo 13](https://myveryown.org/demo/screens/openprov-demo_13.jpg)
 
 Verify 
 
-https://myveryown.org/demo/screens/openprov-demo_14.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_14.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_15.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_15.jpg)
 
 Broadcast the transaction as shown.
 
-https://myveryown.org/demo/screens/openprov-demo_16.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_16.jpg)
 
 http://coinsecrets.org/?to=393451.000036
 
@@ -138,21 +136,21 @@ TX C: The OP_RETURN transaction data in the output transaction and all subsequen
 
 Then again using coinb.in to create, sign, verify and broadcast the transaction.
 
-https://myveryown.org/demo/screens/openprov-demo_17.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_17.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_18.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_18.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_19.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_19.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_20.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_20.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_21.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_21.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_22.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_22.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_23.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_23.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_24.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_24.jpg)
 
 http://coinsecrets.org/?to=393454.000004 
 
@@ -161,11 +159,11 @@ https://blockchain.info/tx/8fd1b973d42a87323defd2c8d2cead6ddf3d3e5397f816a934746
 #####Step 9
 We use bitaddress locally to obtain public keys from the private keys we wish to use in the multisig.
 
-https://myveryown.org/demo/screens/openprov-demo_25.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_25.jpg)
 
 Then using coinb.in locally create a multisig address and redeem script.
 
-https://myveryown.org/demo/screens/openprov-demo_26.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_26.jpg) 
 
 Please see Appendix F for the keys used to create the multisig so you are able to verify the process.
 
@@ -177,15 +175,15 @@ The multisig address is then funded from the Genesis key and this transaction in
 
 We use coinb.in locally to create, sign and broadcast the transaction.
 
-https://myveryown.org/demo/screens/openprov-demo_27.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_27.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_28.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_28.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_29.jpg 
+![demo](https://myveryown.org/demo/screens/openprov-demo_29.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_30.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_30.jpg)
 
-https://myveryown.org/demo/screens/openprov-demo_31.jpg
+![demo](https://myveryown.org/demo/screens/openprov-demo_31.jpg)
 
 http://coinsecrets.org/?to=393456.000010
 
